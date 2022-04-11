@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=Open+Sans:wght@400&display=swap');
+
+:root {
+    --v-anchor-base: #18bca6;
+    --v-primary-base: #18bca6;
+    --v-primary-lighten5: #c5ffff;
+    --v-primary-lighten4: #a7ffff;
+    --v-primary-lighten3: #88fffa;
+    --v-primary-lighten2: #69f5dd;
+    --v-primary-lighten1: #47d8c1;
+    --v-primary-darken1: #00a08c;
+    --v-primary-darken2: #008672;
+    --v-primary-darken3: #006c5a;
+    --v-primary-darken4: #005342;
+    --v-secondary-base: #424242;
+    --v-secondary-lighten5: #c1c1c1;
+    --v-secondary-lighten4: #a6a6a6;
+    --v-secondary-lighten3: #8b8b8b;
+    --v-secondary-lighten2: #727272;
+    --v-secondary-lighten1: #595959;
+    --v-secondary-darken1: #2c2c2c;
+    --v-secondary-darken2: #171717;
+    --v-secondary-darken3: #000000;
+    --v-secondary-darken4: #000000;
+    --v-accent-base: #f0f0f0;
+    --v-accent-lighten5: #ffffff;
+    --v-accent-lighten4: #ffffff;
+    --v-accent-lighten3: #ffffff;
+    --v-accent-lighten2: #ffffff;
+    --v-accent-lighten1: #ffffff;
+    --v-accent-darken1: #d4d4d4;
+    --v-accent-darken2: #b8b8b8;
+    --v-accent-darken3: #9d9d9d;
+    --v-accent-darken4: #838383;
+    --v-error-base: #ff5252;
+    --v-error-lighten5: #ffe4d5;
+    --v-error-lighten4: #ffc6b9;
+    --v-error-lighten3: #ffa99e;
+    --v-error-lighten2: #ff8c84;
+    --v-error-lighten1: #ff6f6a;
+    --v-error-darken1: #df323b;
+    --v-error-darken2: #bf0025;
+    --v-error-darken3: #9f0010;
+    --v-error-darken4: #800000;
+    --v-info-base: #2196f3;
+    --v-info-lighten5: #d4ffff;
+    --v-info-lighten4: #b5ffff;
+    --v-info-lighten3: #95e8ff;
+    --v-info-lighten2: #75ccff;
+    --v-info-lighten1: #51b0ff;
+    --v-info-darken1: #007cd6;
+    --v-info-darken2: #0064ba;
+    --v-info-darken3: #004d9f;
+    --v-info-darken4: #003784;
+    --v-success-base: #08c767;
+    --v-success-lighten5: #c3ffef;
+    --v-success-lighten4: #a5ffd3;
+    --v-success-lighten3: #86ffb7;
+    --v-success-lighten2: #66ff9c;
+    --v-success-lighten1: #42e481;
+    --v-success-darken1: #00ab4e;
+    --v-success-darken2: #008f35;
+    --v-success-darken3: #00751c;
+    --v-success-darken4: #005b00;
+    --v-warning-base: #ffc107;
+    --v-warning-lighten5: #ffffae;
+    --v-warning-lighten4: #ffff91;
+    --v-warning-lighten3: #ffff74;
+    --v-warning-lighten2: #fff956;
+    --v-warning-lighten1: #ffdd37;
+    --v-warning-darken1: #e0a600;
+    --v-warning-darken2: #c18c00;
+    --v-warning-darken3: #a27300;
+    --v-warning-darken4: #855a00;
+    --v-ig-secondary-base: #009c4d;
+    --v-ig-secondary-lighten5: #b0ffd1;
+    --v-ig-secondary-lighten4: #93ffb5;
+    --v-ig-secondary-lighten3: #76f19a;
+    --v-ig-secondary-lighten2: #58d47f;
+    --v-ig-secondary-lighten1: #37b866;
+    --v-ig-secondary-darken1: #008135;
+    --v-ig-secondary-darken2: #00671d;
+    --v-ig-secondary-darken3: #004e04;
+    --v-ig-secondary-darken4: #003600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    min-height: 100vh;
+    background: var(--v-accent-lighten1) url("../images/fundo.svg") no-repeat bottom;
+    background-size: cover;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Configurações lado cadastro */
+.principal-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 90rem;
+    min-height: 69vh;
+    background: var(--v-accent-lighten1);
+    border-radius: 2rem;
+    box-shadow: 0 0.1rem 0.4rem var(--v-accent-darken3);
+    transition-timing-function: ease-in-out;
+}
+
+.cadastro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: var(--v-anchor-base);
+    border-radius: 2rem 0 0 2rem;
+    padding: 3rem 1.2rem;
+    transition-timing-function: ease-in-out;
+}
+
+.logo {
+    margin-top: 2rem;
+}
+
+.logo h1 {
+    display: block;
+    width: 100%;
+    height: 11rem;
+    text-align: center;
+    background-image: url('../images/irmaos-jonalves-white.svg');
+    background-position: center;
+    background-size: cover;
+    width: 7rem;
+    color: #ffffff00;
+}
+
+.logo h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Satisfy', cursive;
+    margin-top: -1rem;
+    color: var(--v-accent-base);
+}
+
+.cadastro p {
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 1.85rem;
+    text-align: center;
+    margin-top: -2.5rem;
+    line-height: 3.2rem;
+}
+
+
+.botao button {
+    padding: 1.3rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    border: 0.1rem solid var(--v-accent-base);
+    border-radius: 0.5rem;
+    color: var(--v-accent-base);
+    font-size: 1.5rem;
+    background: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.botao button:hover {
+    background: #22c5af71;
+    opacity: 50%;
+}
+
+/* Configurações lado login */
+.fazer-login {
+    transition-timing-function: ease-in-out;
+    width: 52.5rem;
+    border-radius: 0 2rem 2rem 0;
+    padding: 3rem 5rem;
+}
+
+.fazer-login .form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.fazer-login div {
+    text-align: center;
+    width: 100%;
+}
+
+.fazer-login .login-title h1 {
+    color: var(--v-anchor-base);
+    font-size: 2.1rem;
+}
+
+.fazer-login p {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-bottom: 0.3rem;
+    color: var(--v-anchor-base);
+}
+
+.fazer-login input,
+.fazer-login button {
+    width: 100%;
+    padding: 1.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--v-accent-darken3);
+}
+
+.fazer-login input {
+    font-size: 1.5rem;
+    color: var(--v-accent-darken4);
+}
+
+.fazer-login input:focus-visible {
+    color: var(--v-primary-darken1);
+    font-weight: bold;
+}
+
+.fazer-login input::placeholder {
+    border: 0.1rem solid var(--v-accent-darken3);
+}
+
+.fazer-login input:focus {
+    accent-color: var(--v-anchor-base);
+    border: none;
+}
+
+.fazer-login button {
+    text-transform: uppercase;
+    padding: 1.3rem;
+    margin-top: -1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--v-accent-base);
+    font-size: 1.5rem;
+    background: var(--v-anchor-base);
+    cursor: pointer;
+}
+
+.fazer-login button:hover {
+    opacity: 80%;
+}
+
+.tela-menor {
+    display: none;
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid var(--v-accent-darken1);
+}
+
+.tela-menor button {
+    margin-top: 1rem;
+}
+
+.tela-menor p{
+    display: block;
+    width: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--v-accent-darken2);
+    margin-top: -1rem;
+    padding: 0;
+    background: var(--v-accent-lighten1);
+
+}
+
+/* Configurações das 'midea queries' */
+@media (max-width: 900px) {
+
+    .cad-titulo,
+    .botao,
+    .login-title {
+        display: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+    }
+    .tela-menor {
+        display: block;
+    }
+
+    .principal-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 45rem;
+        padding: 0 2rem 2rem 2rem;
+        border-radius: 1rem;
+    }
+
+    .cadastro {
+        border-radius: 0;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        height: 18rem;
+        background: none;
+    }
+
+    .logo h1 {
+        background-image: url('../images/irmaos-jonalves.svg');
+    }
+
+    .logo h2 {
+        margin-bottom: 0;
+        color: var(--v-anchor-base);
+    }
+
+    .fazer-login {
+        display: block;
+        width: 45rem;
+        padding: 0;
+    }
+    .form .nome-completo {
+        margin-top: 3rem;
+    }
+
+    .form .esqueceu-senha {
+        margin-bottom: 6rem;
+    }
+
+
+    .form .senha p {
+        margin-top: 3rem;
+    }
+    .form .btn-login {
+        margin-top: 3rem;
+    }
+}

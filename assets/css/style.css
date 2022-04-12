@@ -312,6 +312,7 @@ a {
         max-width: 45rem;
         padding: 0 2rem 2rem 2rem;
         border-radius: 1rem;
+        min-height: 50rem;
     }
 
     .cadastro {
@@ -362,7 +363,7 @@ a {
         align-items: flex-start;
         max-width: 100%;
         border-radius: 0;
-        min-height: 55rem;
+        min-height: 50rem;
         box-shadow: none;
     }
 
